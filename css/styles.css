@@ -1,8 +1,36 @@
 #header {
-    background-color: beige;
+    background-color: #c7c7cf;
     font-family: century gothic;
-    text-align: center;
     padding: 20px 40px; /* 20px arriba/abajo, 40px a los lados */
+    display: flex; /* Hace el contenedor flexible para poder alinear la información como se quiera */
+    flex-direction: column;  /* Coloca los elementos en una columna */
+    text-align: center;
+}
+
+.header-content {
+    display: flex; /* Hace el contenedor flexible para poder alinear la información como se quiera */
+    justify-content: space-between; /* Hace que el contenido se coloque en los extremos del header */
+    align-items: center; /* Centra todo el contenido */ 
+    width: 100%;
+    max-width: 1000px; /* Limita el ancho máximo del contenedor */
+}
+
+.header-left,.header-right {
+    display: flex; /* Hace el contenedor flexible para poder alinear la información como se quiera */
+    flex-direction: column; /* Hace que los elementos del contenedor se apilen horizontalmente */
+}
+
+.header-left {
+    align-items: center;
+    margin-left: 250px;
+}
+
+.header-left h2 {
+    margin-top: -20px;
+}
+
+.header-right {
+    align-items: flex-start;
 }
 
 #photo {
@@ -17,20 +45,54 @@
     height: 20px;
 }
 
-#linkedin {
+.link {
     text-decoration: none; /* Quito el subrayado */
     color: black;
 }
 
+.link:hover {
+    color: #41668b;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul{
+    list-style-type: none; /* Eliminando las viñetas de la lista */
+    margin: 0; /* Eliminando margenes */
+    padding: 0; /* Eliminando relleno interno */
+    text-align: center; /* Alineando el texto del nav al centro */
+}
+
+nav ul li {
+    display: inline; /* Mostrar los elementos de la lista en línea, es decir de forma horizontal*/
+    margin-right: 15px; /* Añadiendo espacio entre los enlaces */
+}
+
+nav ul li a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Eliminando el subrayado de los enlaces */
+    padding: 10px 20px; /* Añadir margenes internas */
+    background-color: #858383; /* Agregando un fondo de color gris a los enlaces */
+    border-radius: 5px; /* Redondeando las esquinas de los enlaces */
+    transition: background-color 0.3s; /* Hace que el color que cambia cuando el usuario pasa el cursor sobre el enlace se demore 0.3 segundos */
+  }
+
+nav ul li a:hover { /*hover aplica estilo de color cuando el usuario pasa el cursor sobre el enlace */
+  background-color: #2c3e50;
+  color: white;
+}
+
 #article1 {
-    background-color: beige;
+    background-color: #f7f7f7;
     font-family: century gothic;
     text-align: justify;
     padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
 }
 
 #article2 {
-    background-color: beige;
+    background-color: #f7f7f7;
     font-family: century gothic;
     text-align: center;
     margin: 0 auto; /* Centra la tabla */
@@ -39,14 +101,23 @@
 
 #article2 table {
     margin: 0 auto; /* Centra la tabla */
+    border-collapse: collapse; /* solo se muestra un borde en vez de dos */
+    width: 100%; /* Poniendolo al ancho de la pantalla */
+    border: 1px solid #ddd;
+}
+
+#article2 table th {
+    background-color: #2c3e50;
+    color: white;
 }
 
 #article2 table th, td {
     padding: 10px; /* Añade espacio de 10px en todos los lados dentro de las celdas de th y td*/
+    border: 1px solid #ddd; /*Cambia el color del borde de la tabla*/
 }
 
 #article3 {
-    background-color: beige;
+    background-color: #f7f7f7;
     font-family: century gothic;
     text-align: justify;
     margin: 0 auto; /* Centra la tabla */
@@ -59,7 +130,7 @@
 }
 
 #article4 {
-    background-color: beige;
+    background-color: #f7f7f7;
     font-family: century gothic;
     text-align: justify;
     margin: 0 auto; /* Centra la tabla */
@@ -72,7 +143,7 @@
 }
 
 #article5 {
-    background-color: beige;
+    background-color: #f7f7f7;
     font-family: century gothic;
     text-align: justify;
     margin: 0 auto; /* Centra la tabla */
@@ -85,8 +156,14 @@
 }
 
 #footer {
-    background-color: beige;
+    background-color: #c7c7cf;
     font-family: century gothic;
     text-align: center;
+    font-style: italic;
     padding: 20px 40px; /* 20px arriba/abajo, 40px a los lados */
+}
+
+#header, #footer, #article1, #article2, #article3, #article4, #article5 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregando una sombra */
+    border-radius: 10px;
 }

@@ -1,0 +1,76 @@
+#header {
+    background-color: beige;
+    font-family: century gothic;
+    text-align: center;
+    padding: 20px 40px; /* 20px arriba/abajo, 40px a los lados */
+}
+
+#photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+}
+
+#linkedin {
+    text-decoration: none; /* Quito el subrayado */
+    color: black;
+}
+
+#article1 {
+    background-color: beige;
+    font-family: century gothic;
+    text-align: justify;
+    padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
+}
+
+#article2 {
+    background-color: beige;
+    font-family: century gothic;
+    text-align: center;
+    margin: 0 auto; /* Centra la tabla */
+    padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
+}
+
+#article2 table {
+    margin: 0 auto; /* Centra la tabla */
+}
+
+#article2 table th, td {
+    padding: 10px; /* Añade espacio de 10px en todos los lados dentro de las celdas de th y td*/
+}
+
+#article3 {
+    background-color: beige;
+    font-family: century gothic;
+    text-align: justify;
+    margin: 0 auto; /* Centra la tabla */
+    padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
+}
+
+#article4 {
+    background-color: beige;
+    font-family: century gothic;
+    text-align: justify;
+    margin: 0 auto; /* Centra la tabla */
+    padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
+}
+
+#article5 {
+    background-color: beige;
+    font-family: century gothic;
+    text-align: justify;
+    margin: 0 auto; /* Centra la tabla */
+    padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
+}
+
+#footer {
+    background-color: beige;
+    font-family: century gothic;
+    text-align: center;
+    padding: 20px 40px; /* 20px arriba/abajo, 40px a los lados */
+}

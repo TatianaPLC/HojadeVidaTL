@@ -9,6 +9,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Hace que la imagen sea circular */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .icons {
@@ -52,6 +53,11 @@
     padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
 }
 
+#article3 h5{
+    font-style: italic;
+    font-weight: normal;
+}
+
 #article4 {
     background-color: beige;
     font-family: century gothic;
@@ -60,12 +66,22 @@
     padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
 }
 
+#article4 h5{
+    font-style: italic;
+    font-weight: normal;
+}
+
 #article5 {
     background-color: beige;
     font-family: century gothic;
     text-align: justify;
     margin: 0 auto; /* Centra la tabla */
     padding: 5px 40px; /* 5px arriba/abajo, 40px a los lados */
+}
+
+#article5 h5 {
+    font-style: italic;
+    font-weight: normal;
 }
 
 #footer {
